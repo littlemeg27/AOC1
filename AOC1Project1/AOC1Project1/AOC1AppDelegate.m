@@ -22,7 +22,7 @@
     
     int count=0;
     int cats=2;
-    int dogs=2;
+    int dogs=4;
     
     
     while(count<=10) //I have a thing for while loops =)
@@ -36,6 +36,7 @@
         
         count++;
     }
+    
     
     while(count<25)
     {
