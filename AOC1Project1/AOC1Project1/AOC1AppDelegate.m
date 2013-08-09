@@ -21,19 +21,30 @@
     //Start of my code
     
     int count=0;
+    int cats=2;
+    int dogs=2;
     
     
-    while (count <= 10) //I have a thing for while loops =)
+    while(count<=10) //I have a thing for while loops =)
     {
         NSLog(@"I have %d\n", count);
         
-            for(int i = 1; i<=5; i++)
+            for(int i=1; i<=5; i++)
             {
                 NSLog(@"Inside the for");
             }
         
         count++;
     }
+    
+    while(count<25)
+    {
+        NSLog(@"Im counting and adding some numbers %d/n", dogs);
+        dogs=dogs+cats;
+        count++;
+    }
+    
+    
     
     
     return YES;
