@@ -17,6 +17,13 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+    
+    //Start of my code
+    
+    
+        NSLog(@"I have 10 Bunnies");
+    
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
