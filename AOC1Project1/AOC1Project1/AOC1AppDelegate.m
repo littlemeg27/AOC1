@@ -16,14 +16,27 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    return YES;
+    
     
     //Start of my code
     
+    int count=0;
     
-        NSLog(@"I have 10 Bunnies");
     
-
+    while (count <= 10) //I have a thing for while loops =)
+    {
+        NSLog(@"I have %d\n", count);
+        
+            for(int i = 1; i<=5; i++)
+            {
+                NSLog(@"Inside the for");
+            }
+        
+        count++;
+    }
+    
+    
+    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
