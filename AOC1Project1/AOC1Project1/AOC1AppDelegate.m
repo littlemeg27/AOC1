@@ -21,10 +21,9 @@
     //Start of my code
     
     int count = 1;
-    int cats = 1;
     int dogs = 4;
     int bunnies = 2;
-    int zoo = 0;
+    int poundsOfAngoraFur = 4;
     int reagen = 1;
     int barks = 1;
     bool meows = TRUE;
@@ -101,6 +100,7 @@
             NSLog(@"At night it is all my job:");
         }
         
+            //Start nested for loop
             for(int i=1; i<=1; i++)
             {
                 NSLog(@"Make sure the big water bowl in the kitchen is full of water.");
@@ -110,23 +110,19 @@
                 NSLog(@"Make sure the Bunnies have food in their bowl.");
                 NSLog(@"Check to see how full the water bottle on their cage is full of water.");
                 NSLog(@"Make sure that Captain America has food, water and is out of the reach of Luna.");
-
-            }
+            } //End nested for loop
         
         count++;
     }
     
+    NSLog(@"Did you know that one reason you have an Angora Bunny is for the Fur?.");
     
-    while(count<25)
+    
+    while(bunnies>=10)
     {
-        zoo = dogs + cats + bunnies;
-        NSLog(@"Im counting and adding animals in my house %d", zoo);
-        cats++;
-        dogs++;
+        int totalAmountOfAngoraFur = bunnies * poundsOfAngoraFur;
+        NSLog(@"%d Pounds of Angora Bunny Fur", totalAmountOfAngoraFur);
         bunnies++;
-        count++;
-        
-        
     }
     
     
