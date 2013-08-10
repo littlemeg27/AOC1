@@ -36,7 +36,7 @@
     
     
     NSLog(@"We have a Zoo at our house.");
-    NSLog(@"I guess you could saw we like the love.");
+    NSLog(@"I guess you could say we like the love.");
     NSLog(@"These are the animals that live with us:");
     
     
@@ -87,14 +87,30 @@
         }
     
    
+    NSLog(@"Everyday we have a feeding schedule:");
     
-    while(count<=10) //I have a thing for while loops =)
+    while(count<=2) //I have a thing for while loops =)
     {
-        NSLog(@"I have %d\n", count);
+        if(count==1)
+        {
+            NSLog(@"In the morning Me or mom has to make sure all this happens:");
+        }
         
-            for(int i=0; i<=5; i++)
+        else
+        {
+            NSLog(@"At night it is all my job:");
+        }
+        
+            for(int i=1; i<=1; i++)
             {
-                NSLog(@"Inside the for");
+                NSLog(@"Make sure the big water bowl in the kitchen is full of water.");
+                NSLog(@"Fill up Luna's food bowl that is on the table by the window.");
+                NSLog(@"Fill up the Dog food bowls near the stairs.");
+                NSLog(@"Give the Rae and Bunbun some dried papaya.");
+                NSLog(@"Make sure the Bunnies have food in their bowl.");
+                NSLog(@"Check to see how full the water bottle on their cage is full of water.");
+                NSLog(@"Make sure that Captain America has food, water and is out of the reach of Luna.");
+
             }
         
         count++;
