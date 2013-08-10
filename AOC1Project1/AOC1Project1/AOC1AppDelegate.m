@@ -26,6 +26,7 @@
     int poundsOfAngoraFur = 4;
     int reagen = 1;
     int barks = 1;
+    int timesAYear = 3;
     bool meows = TRUE;
     bool luna = TRUE;
     float paces = 1;
@@ -115,14 +116,17 @@
         count++;
     }
     
-    NSLog(@"Did you know that one reason you have an Angora Bunny is for the Fur?.");
+        NSLog(@"Did you know that one reason you have an Angora Bunny is for the Fur?.");
+        NSLog(@"My mom plans on getting four more bunnies soon.");
+        NSLog(@"I wonder how much fur that is in a year?");
     
     
-    while(bunnies>=10)
+    while(count<=6)
     {
-        int totalAmountOfAngoraFur = bunnies * poundsOfAngoraFur;
-        NSLog(@"%d Pounds of Angora Bunny Fur", totalAmountOfAngoraFur);
+        int totalAmountOfAngoraFur = bunnies * poundsOfAngoraFur * timesAYear;
+        NSLog(@"%i ounces of Angora Bunny Fur", totalAmountOfAngoraFur);
         bunnies++;
+        count++;
     }
     
     
