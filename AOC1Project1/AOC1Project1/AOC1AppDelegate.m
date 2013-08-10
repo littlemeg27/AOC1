@@ -20,16 +20,51 @@
     
     //Start of my code
     
-    int count=0;
-    int cats=2;
-    int dogs=4;
+    int count = 1;
+    int cats = 1;
+    int dogs = 4;
+    int bunnies = 2;
+    int zoo = 0;
+    
+    
+    NSLog(@"We have a Zoo at our house");
+    NSLog(@"I guess you could saw we like the love");
+    NSLog(@"These are the animals that live with us:");
+    
+        for(int i=1; i<2; i++)
+        {
+            NSLog(@"%d Golden named Maddie", i);
+            NSLog(@"%d Golden named Leah", i);
+            NSLog(@"%d Golden named Valentine", i);
+            NSLog(@"%d Standerded Poodle named Reagen", i);
+            NSLog(@"%d Cat named Luna", i);
+            NSLog(@"%d Angora Bunny named Bunbun", i);
+            NSLog(@"%d Angora Bunny named Rae", i);
+            NSLog(@"%d Canray named Caption America", i);
+        }
+    
+    NSLog(@"The mornings are sometimes the busyest because everyone decides there hungry.");
+    
+    if (<#condition#>)
+    {
+        <#statements#>
+    }
+    
+    
+    
+    
+   
+    
+    
+    
+    
     
     
     while(count<=10) //I have a thing for while loops =)
     {
         NSLog(@"I have %d\n", count);
         
-            for(int i=1; i<=5; i++)
+            for(int i=0; i<=5; i++)
             {
                 NSLog(@"Inside the for");
             }
@@ -40,10 +75,18 @@
     
     while(count<25)
     {
-        NSLog(@"Im counting and adding some numbers %d/n", dogs);
-        dogs=dogs+cats;
+        zoo = dogs + cats + bunnies;
+        NSLog(@"Im counting and adding animals in my house %d", zoo);
+        cats++;
+        dogs++;
+        bunnies++;
         count++;
+        
+        
     }
+    
+    
+    
     
     
     
