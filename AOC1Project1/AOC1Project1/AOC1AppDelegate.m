@@ -27,6 +27,11 @@
     int zoo = 0;
     int reagen = 1;
     int barks = 1;
+    bool meows = TRUE;
+    bool luna = TRUE;
+    float paces = 1;
+    float maddie = 2;
+    
 
     
     
@@ -46,6 +51,7 @@
             NSLog(@"%d Angora Bunny named Rae", i);
             NSLog(@"%d Canray named Captain America", i);
         }//end of single for loop
+    
     
     
     //Start of if else statments
@@ -69,18 +75,18 @@
     NSLog(@"The mornings are sometimes the busiest because everyone decides there hungry.");
     
     
-    if(()
-
     
+        if((luna == meows) || (reagen <= paces))
+        {
+            NSLog(@"It means they are out of food or water somewhere.");
+        }
     
-    
+        else if((maddie == paces) && (reagen <= paces))
+        {
+            NSLog(@"It means either one of them wants to go outside");
+        }
     
    
-    
-    
-    
-    
-    
     
     while(count<=10) //I have a thing for while loops =)
     {
