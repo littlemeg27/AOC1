@@ -25,13 +25,17 @@
     int dogs = 4;
     int bunnies = 2;
     int zoo = 0;
+    int reagen = 1;
+    int barks = 1;
+
     
     
-    NSLog(@"We have a Zoo at our house");
-    NSLog(@"I guess you could saw we like the love");
+    NSLog(@"We have a Zoo at our house.");
+    NSLog(@"I guess you could saw we like the love.");
     NSLog(@"These are the animals that live with us:");
     
-        for(int i=1; i<2; i++)
+    
+        for(int i=1; i<2; i++) //Start of single for loop
         {
             NSLog(@"%d Golden named Maddie", i);
             NSLog(@"%d Golden named Leah", i);
@@ -40,15 +44,33 @@
             NSLog(@"%d Cat named Luna", i);
             NSLog(@"%d Angora Bunny named Bunbun", i);
             NSLog(@"%d Angora Bunny named Rae", i);
-            NSLog(@"%d Canray named Caption America", i);
-        }
+            NSLog(@"%d Canray named Captain America", i);
+        }//end of single for loop
     
-    NSLog(@"The mornings are sometimes the busyest because everyone decides there hungry.");
     
-    if (<#condition#>)
+    //Start of if else statments
+    if(reagen == barks) 
     {
-        <#statements#>
+        NSLog(@"I have to let Reagen out so he doesn't wake my mom up.");
     }
+    
+    else if(dogs >= barks)
+    {
+        NSLog(@"I have to let all the dogs out so they don't wake my mom up.");
+    }
+    
+    else
+    {
+        NSLog(@"I have to let all the dogs out before 9 anyway if I go to work that day.");
+    }
+    //End of if else statments
+    
+    
+    NSLog(@"The mornings are sometimes the busiest because everyone decides there hungry.");
+    
+    
+    if(()
+
     
     
     
