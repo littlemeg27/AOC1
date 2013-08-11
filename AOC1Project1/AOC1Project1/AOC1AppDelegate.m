@@ -20,10 +20,13 @@
     
     //Start of my code
     
+    //Variables
     int count = 1;
     int dogs = 4;
     int bunnies = 2;
-    int poundsOfAngoraFur = 4;
+    int ouncesOfAngoraFur = 4;
+    int poundsOfAngoraFur = 0;
+    int totalAmountOfAngoraFur = 0;
     int reagen = 1;
     int barks = 1;
     int timesAYear = 3;
@@ -31,6 +34,7 @@
     bool luna = TRUE;
     float paces = 1;
     float maddie = 2;
+    float poundsConverter = 16;
     
 
     
@@ -54,8 +58,8 @@
     
     
     
-    //Start of if else statments
-    if(reagen == barks) 
+    
+    if(reagen == barks) //Start of if else statments
     {
         NSLog(@"I have to let Reagen out so he doesn't wake my mom up.");
     }
@@ -68,15 +72,15 @@
     else
     {
         NSLog(@"I have to let all the dogs out before 9 anyway if I go to work that day.");
-    }
-    //End of if else statments
+    } //End of if else statments
+    
     
     
     NSLog(@"The mornings are sometimes the busiest because everyone decides there hungry.");
     
     
-    
-        if((luna == meows) || (reagen <= paces))
+        
+        if((luna == meows) || (reagen <= paces)) //AND, OR comparisons
         {
             NSLog(@"It means they are out of food or water somewhere.");
         }
@@ -101,8 +105,8 @@
             NSLog(@"At night it is all my job:");
         }
         
-            //Start nested for loop
-            for(int i=1; i<=1; i++)
+            
+            for(int i=1; i<=1; i++) //Start nested for loop
             {
                 NSLog(@"Make sure the big water bowl in the kitchen is full of water.");
                 NSLog(@"Fill up Luna's food bowl that is on the table by the window.");
@@ -121,20 +125,25 @@
         NSLog(@"I wonder how much fur that is in a year?");
     
     
-    while(count<=6)
+    
+    while(count<=6) //While loop with increment
     {
-        int totalAmountOfAngoraFur = bunnies * poundsOfAngoraFur * timesAYear;
+        totalAmountOfAngoraFur = bunnies * ouncesOfAngoraFur * timesAYear;
         NSLog(@"%i ounces of Angora Bunny Fur", totalAmountOfAngoraFur);
         bunnies++;
         count++;
     }
     
+        //Casting 
+        NSLog(@"Before I cast poundsConverter to int %f", poundsConverter);
     
+        poundsOfAngoraFur = totalAmountOfAngoraFur/(int)poundsConverter;
     
+        NSLog(@"After I cast poundsConverter to int %f", poundsConverter);
     
+        NSLog(@"And end up getting %d pounds of Angora Fur from just bunnies!", poundsOfAngoraFur);
     
-    
-    
+
     return YES;
 }
 
