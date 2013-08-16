@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BABCB20117BC927400175AFF"
+               BlueprintIdentifier = "BA84D24617BDEDD500C829DF"
                BuildableName = "AOC1Project2.app"
                BlueprintName = "AOC1Project2"
                ReferencedContainer = "container:AOC1Project2.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BABCB22A17BC927500175AFF"
+               BlueprintIdentifier = "BA84D26F17BDEDD500C829DF"
                BuildableName = "AOC1Project2Tests.octest"
                BlueprintName = "AOC1Project2Tests"
                ReferencedContainer = "container:AOC1Project2.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BABCB20117BC927400175AFF"
+            BlueprintIdentifier = "BA84D24617BDEDD500C829DF"
             BuildableName = "AOC1Project2.app"
             BlueprintName = "AOC1Project2"
             ReferencedContainer = "container:AOC1Project2.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BABCB20117BC927400175AFF"
+            BlueprintIdentifier = "BA84D24617BDEDD500C829DF"
             BuildableName = "AOC1Project2.app"
             BlueprintName = "AOC1Project2"
             ReferencedContainer = "container:AOC1Project2.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BABCB20117BC927400175AFF"
+            BlueprintIdentifier = "BA84D24617BDEDD500C829DF"
             BuildableName = "AOC1Project2.app"
             BlueprintName = "AOC1Project2"
             ReferencedContainer = "container:AOC1Project2.xcodeproj">

@@ -2,20 +2,31 @@
 //  AOC1AppDelegate.m
 //  AOC1Project2
 //
-//  Created by Brenna Pavlinchak on 8/15/13.
+//  Created by Brenna Pavlinchak on 8/16/13.
 //  Copyright (c) 2013 Brenna Pavlinchak. All rights reserved.
 //
 
 #import "AOC1AppDelegate.h"
 
+#import "AOC1ViewController.h"
+
 @implementation AOC1AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        self.viewController = [[AOC1ViewController alloc] initWithNibName:@"AOC1ViewController_iPhone" bundle:nil];
+    } else {
+        self.viewController = [[AOC1ViewController alloc] initWithNibName:@"AOC1ViewController_iPad" bundle:nil];
+    }
+    self.window.rootViewController = self.viewController;
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
