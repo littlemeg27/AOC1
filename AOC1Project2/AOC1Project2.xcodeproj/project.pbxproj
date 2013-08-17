@@ -400,6 +400,7 @@
 				GCC_PREFIX_HEADER = "AOC1Project2/AOC1Project2-Prefix.pch";
 				INFOPLIST_FILE = "AOC1Project2/AOC1Project2-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -411,6 +412,7 @@
 				GCC_PREFIX_HEADER = "AOC1Project2/AOC1Project2-Prefix.pch";
 				INFOPLIST_FILE = "AOC1Project2/AOC1Project2-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
