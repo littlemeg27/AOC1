@@ -22,7 +22,9 @@
     
     int addedNumbers = [self add:3 addFunction:12]; //Call add Function
     
-   // bool boolCompare = [self compareOne:3 compareTwo:12]; //Call compare Function
+    int boolOne = 3;
+    int boolTwo = 12;
+    BOOL boolCompare = [self compareOne:boolOne compareTwo:boolTwo]; //Call compare Function
 }
 
 
@@ -31,7 +33,7 @@
     return (numOne + numTwo);
 }
 
--(bool)compare:(NSInteger)compareOne compareFunction:(NSInteger)compareTwo //Compare Function
+- (bool)compare:(NSInteger)compareOne compareFunction:(NSInteger)compareTwo //Compare Function
 {
         if(compareOne == compareTwo)
         {
@@ -44,10 +46,18 @@
         }
 }
 
--(NSString*)append:(NSString*)stringOne appendFunction:(NSString*)stringTwo //Append Function
+- (NSString*)append:(NSString*)stringOne appendFunction:(NSString*)stringTwo //Append Function
 {
     NSMutableString *string = [[NSMutableString alloc] initWithString:stringOne];
     NSString *bothStrings = [string stringByAppendingString:stringTwo];
+    return bothStrings;
+}
+
+- (void)displayAlertWithString:(NSString*)message //DisplayAlertWithString Function
+{
+    UIAlertView *messagePopUp = [[UIAlertView alloc] initWithTitle:@"Message:" message:message delegate:nil
+                                 cancelButtonTitle:@"Hey you click me!" otherButtonTitles:nil];
+    [messagePopUp show];
 }
 
 - (void)didReceiveMemoryWarning
