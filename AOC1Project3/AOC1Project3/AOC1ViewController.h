@@ -21,5 +21,7 @@
 
 -(bool)compare:(NSInteger)compareOne compareFunction:(NSInteger)compareTwo; //Initialize for compare
 
+-(NSString*)append:(NSString*)stringOne appendFunction:(NSString*)stringTwo //Initialize for append
+
 @end
 

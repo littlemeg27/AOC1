@@ -18,17 +18,36 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.   
+	// Do any additional setup after loading the view, typically from a nib.
+    
+    int addedNumbers = [self add:3 addFunction:12]; //Call add Function
+    
+   // bool boolCompare = [self compareOne:3 compareTwo:12]; //Call compare Function
 }
+
 
 - (int)add:(NSInteger)numOne addFunction:(NSInteger)numTwo //Add Function
 {
-    return (numOne + numTwo); //Says nothing about outputting anywhere. 
+    return (numOne + numTwo);
 }
 
 -(bool)compare:(NSInteger)compareOne compareFunction:(NSInteger)compareTwo //Compare Function
 {
-    if(
+        if(compareOne == compareTwo)
+        {
+            return YES;
+        }
+    
+        else
+        {
+            return NO;
+        }
+}
+
+-(NSString*)append:(NSString*)stringOne appendFunction:(NSString*)stringTwo //Append Function
+{
+    NSMutableString *string = [[NSMutableString alloc] initWithString:stringOne];
+    NSString *bothStrings = [string stringByAppendingString:stringTwo];
 }
 
 - (void)didReceiveMemoryWarning
