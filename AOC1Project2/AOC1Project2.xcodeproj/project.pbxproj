@@ -399,6 +399,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AOC1Project2/AOC1Project2-Prefix.pch";
 				INFOPLIST_FILE = "AOC1Project2/AOC1Project2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -411,6 +412,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AOC1Project2/AOC1Project2-Prefix.pch";
 				INFOPLIST_FILE = "AOC1Project2/AOC1Project2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -470,6 +472,7 @@
 				BA84D28417BDEDD500C829DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA84D28517BDEDD500C829DF /* Build configuration list for PBXNativeTarget "AOC1Project2Tests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +481,7 @@
 				BA84D28717BDEDD500C829DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
