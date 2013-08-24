@@ -27,15 +27,16 @@
 
     int addedNumbers = [self add:boolOne addFunction:boolTwo];
     
+    
     NSNumber *stringedNumbers = [NSNumber numberWithInt:addedNumbers]; //Change number to string
-    NSString *myString = [changeNumber stringValue]; //Changing string
+    NSString *newString = [stringedNumbers stringValue]; //Changing string
     NSString *messageToPass = [NSString stringWithFormat:@"The appended number is %@", stringedNumbers]; //Changing string
     [self displayAlertWithString:messageToPass];
     
-    NSString *appendString = [self stringedNumbers:stringOne messageToPass:stringTwo]; //Append the string
+    NSString *appendString = [self append:messageToPass appendFunction:newString]; //Append the string
     [self displayAlertWithString:appendString];
     
-    NSString *popUpAppend = [self appendString1:@"Placeholder" appendString2:@"Placeholder"]; //Call Append Function
+    NSString *popUpAppend = [self append:@"This is " appendFunction:@"my pop up app!"]; //Call Append Function
     [self displayAlertWithString:popUpAppend];
 }
 

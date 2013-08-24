@@ -13,7 +13,20 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "36"
          endingLineNumber = "36"
-         landmarkName = "-add:addFunction:"
+         landmarkName = "-viewDidLoad"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "AOC1Project3/AOC1ViewController.m"
+         timestampString = "399015326.496203"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "31"
+         endingLineNumber = "31"
+         landmarkName = "-viewDidLoad"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
