@@ -28,8 +28,15 @@
     int addedNumbers = [self add:boolOne addFunction:boolTwo];
     
     NSNumber *stringedNumbers = [NSNumber numberWithInt:addedNumbers]; //Change number to string
-    NSString *messageToPass = [NSString stringWithFormat:@"The number is %d", stringedNumbers]; //Changing string
+    NSString *myString = [changeNumber stringValue]; //Changing string
+    NSString *messageToPass = [NSString stringWithFormat:@"The appended number is %@", stringedNumbers]; //Changing string
+    [self displayAlertWithString:messageToPass];
     
+    NSString *appendString = [self stringedNumbers:stringOne messageToPass:stringTwo]; //Append the string
+    [self displayAlertWithString:appendString];
+    
+    NSString *popUpAppend = [self appendString1:@"Placeholder" appendString2:@"Placeholder"]; //Call Append Function
+    [self displayAlertWithString:popUpAppend];
 }
 
 
