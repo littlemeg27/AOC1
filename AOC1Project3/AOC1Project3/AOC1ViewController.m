@@ -21,10 +21,13 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     int addedNumbers = [self add:3 addFunction:12]; //Call add Function
+    NSNumber *stringedNumbers = [NSNumber numberWithInt:addedNumbers]; //Change number to string
     
     int boolOne = 3;
     int boolTwo = 12;
-    BOOL boolCompare = [self compareOne:boolOne compareTwo:boolTwo]; //Call compare Function
+    BOOL boolCompare = [self compare:boolOne compareFunction:boolTwo]; //Call compare Function
+    
+    
 }
 
 
