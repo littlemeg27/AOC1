@@ -10,10 +10,7 @@
 
 @interface AOC1ViewController : UIViewController
 {
-    int addedNumbers; // Variable to contain the combined integers
-    int numOne;         // Variable for integer Number 1
-    int numTwo;
-    
+
     
 }
 

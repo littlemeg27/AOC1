@@ -20,18 +20,21 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    int boolOne = 3;
-    int boolTwo = 12;
+    int boolOne = 27;
+    int boolTwo = 27;
+    int numOne = 3;
+    int numTwo = 12; 
     
     BOOL boolCompare = [self compare:boolOne compareFunction:boolTwo]; //Call compare Function
+    NSString *boolAnswered = [NSString stringWithFormat:@"Compare:", ? @"Yes" : @"No"]; //Compare 
+    [self displayAlertWithString:boolAnswered]; //Compare popup
 
-    int addedNumbers = [self add:boolOne addFunction:boolTwo];
-    
+    int addedNumbers = [self add:numOne addFunction:numTwo];
     
     NSNumber *stringedNumbers = [NSNumber numberWithInt:addedNumbers]; //Change number to string
     NSString *newString = [stringedNumbers stringValue]; //Changing string
-    NSString *messageToPass = [NSString stringWithFormat:@"The appended number is %@", stringedNumbers]; //Changing string
-    [self displayAlertWithString:messageToPass];
+    NSString *messageToPass = [NSString stringWithFormat:@"The number is %@", stringedNumbers]; //Changing string
+    [self displayAlertWithString:messageToPass]; //Popup for my stringed numbers.
     
     NSString *appendString = [self append:messageToPass appendFunction:newString]; //Append the string
     [self displayAlertWithString:appendString];
