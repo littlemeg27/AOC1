@@ -26,7 +26,7 @@
     int numTwo = 12; 
     
     BOOL boolCompare = [self compare:boolOne compareFunction:boolTwo]; //Call compare Function
-    NSString *boolAnswered = [NSString stringWithFormat:@"Compare:", ? @"Yes" : @"No"]; //Compare 
+    NSString *boolAnswered = [NSString stringWithFormat:@"Compare: %s", boolCompare ? "Yes" : "No"]; //Compare 
     [self displayAlertWithString:boolAnswered]; //Compare popup
 
     int addedNumbers = [self add:numOne addFunction:numTwo];
