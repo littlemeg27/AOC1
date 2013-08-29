@@ -11,9 +11,11 @@
 @interface AOC1ViewController : UIViewController
 {
     UILabel *userNameLabel;
-    UITextField * userNameTextField;
+    UITextField *userNameTextField;
     UIButton *userNameButton;
     UILabel *defaultTextLabel;
+    UIButton *dateButton;
+    UITextField *textField;
 }
 
 @end
