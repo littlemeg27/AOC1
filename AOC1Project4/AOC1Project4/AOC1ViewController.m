@@ -20,6 +20,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    
     userNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 30, 100.0, 40.0)]; //start of the usernamelabel
     
     if(userNameLabel !=nil)
@@ -30,6 +31,7 @@
     }
     [self.view addSubview:userNameLabel];
     
+    
     userNameTextField = [[UITextField alloc] initWithFrame:CGRectMake(130.0, 30, 240.0, 40.0)]; //Start of the login text field
     
     if(userNameTextField !=nil)
@@ -37,6 +39,7 @@
         userNameTextField.borderStyle = UITextBorderStyleRoundedRect;
     }
     [self.view addSubview:userNameTextField];
+    
     
     userNameButton = [UIButton buttonWithType:UIButtonTypeRoundedRect]; //Start of the login button
     
@@ -65,7 +68,21 @@
 
 - (void)onClick
 {
-    NSString *userNameText = [UITextField text];
+    if(userNameButton.tag == BUTTONZERO)
+    {
+        NSString *userNameText = [UITextField text];
+        
+            if(userNameText.length > 0)
+            {
+                NSString *login = [[NSString alloc] initWithFormat:@"The user: %@ has been logged in", userNameText];
+                defaultTextLabel.text = login;
+            }
+        
+            else
+            {
+                defaultTextLabel.text = @"The username cannot be empty!";
+            }
+    }
 }
 
 - (void)didReceiveMemoryWarning
