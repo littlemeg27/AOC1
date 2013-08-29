@@ -468,6 +468,7 @@
 				BAB2842E17C596E5008C9510 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BAB2842F17C596E5008C9510 /* Build configuration list for PBXNativeTarget "AOC1Project3Tests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +477,7 @@
 				BAB2843117C596E5008C9510 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
