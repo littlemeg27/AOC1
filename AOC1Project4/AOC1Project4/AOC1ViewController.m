@@ -92,7 +92,7 @@
     [self.view addSubview:infoButton];
     
     
-    infoButtonLabel = [[UILabel alloc] initWithFrame:CGRectMake(130.0, 160.0, 500.0, 60.0)]; //start of the infoButtonLabel
+    infoButtonLabel = [[UILabel alloc] initWithFrame:CGRectMake(40.0, 575.0, 500.0, 60.0)]; //start of the infoButtonLabel
     
     if(infoButtonLabel !=nil)
     {
@@ -100,17 +100,13 @@
         infoButtonLabel.textAlignment = NSTextAlignmentCenter;
     }
     
-
-
-    
-    
 }
 
 - (void)onClick:(UIButton*) userNameButton
 {
     if(userNameButton.tag == BUTTONLOGIN)
     {
-        NSString *userNameText = [textField text];
+        NSString *userNameText = [userNameTextField text];
         
         if(userNameText.length > 0)
         {
@@ -124,9 +120,9 @@
         } 
     }//End of checks for first button
     
-    else if (dateButton.tag == BUTTONDATE)
+    else if (userNameButton.tag == BUTTONDATE)
     {
-        NSDate *todaysDate = [NSDate date];
+        todaysDate = [NSDate date];
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         
         if(dateFormatter !=nil)
@@ -145,7 +141,7 @@
         
     }
 
-    else if (infoButton.tag == BUTTONINFO)
+    else if (userNameButton.tag == BUTTONINFO)
     {
         infoButtonLabel.text = @"This App was Written and Designed by Brenna Pavlinchak";
         infoButtonLabel.backgroundColor = [UIColor blueColor];
