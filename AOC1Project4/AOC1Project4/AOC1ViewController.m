@@ -24,18 +24,18 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     
-    userNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 30, 100.0, 40.0)]; //start of the usernamelabel
+    userNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(150, 30, 100.0, 40.0)]; //start of the usernamelabel
     
     if(userNameLabel !=nil)
     {
-        userNameLabel.backgroundColor = [UIColor whiteColor];
-        userNameLabel.textColor = [UIColor blackColor];
+        userNameLabel.backgroundColor = [UIColor darkGrayColor];
+        userNameLabel.textColor = [UIColor whiteColor];
         userNameLabel.text = @"Username:";
     }
     [self.view addSubview:userNameLabel];
     
     
-    userNameTextField = [[UITextField alloc] initWithFrame:CGRectMake(130.0, 30, 240.0, 40.0)]; //Start of the login text field
+    userNameTextField = [[UITextField alloc] initWithFrame:CGRectMake(250.0, 30, 240.0, 40.0)]; //Start of the login text field
     
     if(userNameTextField !=nil)
     {
@@ -48,7 +48,7 @@
     
     if(userNameButton !=nil)
     {
-        userNameButton.frame = CGRectMake(330.0, 90.0, 110.0, 40.0);
+        userNameButton.frame = CGRectMake(300.0, 90.0, 110.0, 40.0);
         [userNameButton setTitle:@"Login" forState:UIControlStateNormal];
         [userNameButton setTitle:@"Logging In" forState:UIControlStateHighlighted];
         [userNameButton addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -72,7 +72,7 @@
     
     if(dateButton !=nil)
     {
-        dateButton.frame = CGRectMake(80.0, 250.0, 110.0, 40.0);
+        dateButton.frame = CGRectMake(300.0, 350.0, 110.0, 40.0);
         [dateButton setTitle:@"Show Date" forState:UIControlStateNormal];
         [dateButton setTitle:@"Showing Date" forState:UIControlStateHighlighted];
         [dateButton addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -92,7 +92,7 @@
     [self.view addSubview:infoButton];
     
     
-    infoButtonLabel = [[UILabel alloc] initWithFrame:CGRectMake(40.0, 575.0, 500.0, 60.0)]; //start of the infoButtonLabel
+    infoButtonLabel = [[UILabel alloc] initWithFrame:CGRectMake(40.0, 600.0, 600.0, 100.0)]; //start of the infoButtonLabel
     
     if(infoButtonLabel !=nil)
     {
