@@ -50,7 +50,7 @@
         userNameButton.frame = CGRectMake(330.0, 90.0, 110.0, 40.0);
         [userNameButton setTitle:@"Login" forState:UIControlStateNormal];
         [userNameButton setTitle:@"Logging In" forState:UIControlStateHighlighted];
-        [userNameButton addTarget:self action:@selector(onClick) forControlEvents:UIControlEventTouchDragInside];
+        [userNameButton addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchDragInside];
         userNameButton.tag = BUTTONLOGIN;
     }
     [self.view addSubview:userNameButton];
@@ -74,17 +74,14 @@
         dateButton.frame = CGRectMake(80.0, 250.0, 110.0, 40.0);
         [dateButton setTitle:@"Show Date" forState:UIControlStateNormal];
         [dateButton setTitle:@"Showing Date" forState:UIControlStateHighlighted];
-        [dateButton addTarget:self action:@selector(onClick) forControlEvents:UIControlEventTouchDragInside];
+        [dateButton addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchDragInside];
         dateButton.tag = BUTTONDATE;
     }
     [self.view addSubview:dateButton];
-
-    
-    
     
 }
 
-- (void)onClick
+- (void)onClick:(UIButton*) userNameButton
 {
     if(userNameButton.tag == BUTTONLOGIN)
     {
@@ -99,7 +96,28 @@
         else
         {
             defaultTextLabel.text = @"The username cannot be empty!";
+        } 
+    }//End of checks for first button
+    
+    else if (dateButton.tag == BUTTONDATE)
+    {
+        NSDate *todaysDate = [NSDate date];
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        
+        if(dateFormatter !=nil)
+        {
+            [dateFormatter setDateFormat:@"MMMM d,Y hh:mm:ss a zzzz"];
+             NSString *showTodaysDate = [dateFormatter stringFromDate:todaysDate];
+             
+             UIAlertView *messagePopUp = [[UIAlertView alloc] initWithTitle:@"Date:" message:showTodaysDate delegate:nil
+                         cancelButtonTitle:@"OK!" otherButtonTitles:nil];
+             
+             if (messagePopUp != nil)
+             {
+                 [messagePopUp show];
+             }
         }
+        
     }
 }
 

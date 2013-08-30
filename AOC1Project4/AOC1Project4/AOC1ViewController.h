@@ -16,6 +16,7 @@
     UILabel *defaultTextLabel;
     UIButton *dateButton;
     UITextField *textField;
+    NSDate *todaysDate;
 }
 
 @end
