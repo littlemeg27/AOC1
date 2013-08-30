@@ -104,7 +104,7 @@
 
 - (void)onClick:(UIButton*) userNameButton
 {
-    if(userNameButton.tag == BUTTONLOGIN)
+    if(userNameButton.tag == BUTTONLOGIN) //if for the username button
     {
         NSString *userNameText = [userNameTextField text];
         
@@ -120,7 +120,7 @@
         } 
     }//End of checks for first button
     
-    else if (userNameButton.tag == BUTTONDATE)
+    else if (userNameButton.tag == BUTTONDATE) //if for the date button
     {
         todaysDate = [NSDate date];
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
@@ -141,7 +141,7 @@
         
     }
 
-    else if (userNameButton.tag == BUTTONINFO)
+    else if (userNameButton.tag == BUTTONINFO) //if for the infor button
     {
         infoButtonLabel.text = @"This App was Written and Designed by Brenna Pavlinchak";
         infoButtonLabel.backgroundColor = [UIColor blueColor];
